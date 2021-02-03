@@ -21,7 +21,7 @@ app.use( (req, res) => {
     res.redirect('/')
 } )
 
-schedule.scheduleJob('55 14 * * *', movieMailer);
+schedule.scheduleJob('0 9 * * *', movieMailer);
 
 const PORT = process.env.PORT || 8080
 mongoose.connect(process.env.DB_URL, { 
